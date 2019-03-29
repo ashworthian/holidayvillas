@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+body {
+  /* Remove user agent (browser) stylesheet styling */
+  padding: 0;
+  background-color: #e7eaf6;
+  width: 1200px;
+  margin: 0 auto 0 auto;
+  font-family: 'Special Elite', cursive;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+  color: #a2a8d3;
+}
+
+h1 {
+  margin: 20px 0 0 0;
+  height: 150px;
+}
+
+nav {
+  text-align: center;
+  border-top: 2px dashed #113f67;
+  border-bottom: 2px dashed #113f67;
+  padding: 10px 0 5px 0;
+  margin: 15px 0;
+}
+
+nav a {
+  padding: 0 40px 0 40px;
+  text-decoration: none;
+  /* Set to uppercase */
+  text-transform: uppercase;
+  color: #113f67;
+  font-size: 22px;
+}
+
+nav a:hover {
+  background-color: #a2a8d3;
+}
+
+section {
+  /* Floating elements sit next to each other on one line as far as there is room. Float: left; makes elements sit next to each other starting on the left. We can also use float: right;  */
+  float: left;
+  /* We set a width of 50% to split the screen into two columns */
+  width: 50%;
+  height: 500px;
+  background-color: #a2a8d3;
+  color: #38598b;
+}
+
+div h2 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Monoton', cursive;
+}
+
+/* This styles up elements in html with a class of .big-image */
+.big-image {
+  /* This stretches the background images to cover the sections */
+  background-size: cover;
+}
+
+/* These add different background images to the sections with id attributes */
+#topic-one {
+  background-image: url('../images/nomadic/bali-villa.png');
+}
+
+#topic-two {
+  background-image: url('../images/nomadic/bali-food.png');
+}
+
+#topic-three {
+  background-image: url('../images/nomadic/bali-pool.png');
+}
+
+div {
+  /* This moves the topic content vertically down inside the sections with text. To adjust position, increase or decrease the percentage*/
+  transform: translateY(20%);
+  padding: 0 30px;
+}
+
+form {
+  /* This fixes the floated layout and allows us to add height to the form */
+  clear: left;
+  text-align: center;
+  padding: 50px 0;
+}
+
+form h2 {
+  color: #38598b;
+}
+
+textarea {
+  background-color: #a2a8d3;
+  color: #38598b;
+}
+
+::placeholder {
+  color: #38598b;
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+  background-color: #38598b;
+  color: #e7eaf6;
+  border-radius: 4px;
+  cursor: pointer;
+}
